@@ -79,5 +79,5 @@ class drupal (
   validate_absolute_path($drush_path)
   validate_absolute_path($update_script_path)
 
-  class { 'drupal::install': }
+  class { '::drupal::install': }
 }

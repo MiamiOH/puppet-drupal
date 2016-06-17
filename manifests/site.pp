@@ -218,12 +218,12 @@ define drupal::site (
     command => $drush_update_database,
     # The command is only executed when all conditions return an exit code 0.
     onlyif  => [
-        # Check the site is configured; bootstrap is only emitted when Drupal is fully set up
-        "test -n \"`${drush_check_database_connectivity}`\"",
+      # Check the site is configured; bootstrap is only emitted when Drupal is fully set up
+      "test -n \"`${drush_check_database_connectivity}`\"",
 
-        # Check there are pending updates to be executed; if Drupal is not set up properly, this test will also return
-        # true (bootstrap has failed); hence the status safe-guard above.
-        "test -n \"`${drush_check_pending_database_updates}`\"" ,
+      # Check there are pending updates to be executed; if Drupal is not set up properly, this test will also return
+      # true (bootstrap has failed); hence the status safe-guard above.
+      "test -n \"`${drush_check_pending_database_updates}`\"" ,
     ],
     user    => $process,
     timeout => $timeout,

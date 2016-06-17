@@ -24,7 +24,7 @@ class drupal::params {
     '/usr/sbin',
     '/usr/bin',
     '/sbin',
-    '/bin'
+    '/bin',
   ]
   
   $drush_version = '8.0.5'
