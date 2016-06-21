@@ -1,6 +1,6 @@
 {
   "name": "puppet-drupal",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "author": "Andrew Farler",
   "license": "Apache-2.0",
   "summary": "Install and manage Drupal including modules and sites.",
