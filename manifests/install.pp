@@ -46,7 +46,7 @@ class drupal::install inherits drupal {
     mode   => '0644',
   }
 
-  archive { $drush_filename:
+  archive { $drush_install_path:
     ensure        => present,
     extract       => true,
     extract_path  => $drush_install_dir,
