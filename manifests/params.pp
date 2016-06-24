@@ -15,8 +15,8 @@ class drupal::params {
   $config_dir = '/etc/drush'
   $log_dir = '/var/log/drush'
 
-  $www_dir = '/var/www'
-  $www_process = 'www-data'
+  $www_dir = '/var/www/html'
+  $www_process = 'apache'
   
   $exec_paths = [
     '/usr/local/sbin',
